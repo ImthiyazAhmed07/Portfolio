@@ -44,11 +44,11 @@ Featuring a sleek dark/light aesthetic, glassmorphic UI, ambient canvas particle
      - `clear` — Clear the console
 
 6. **VIT Vellore Academic Pathway**:
-   - Dedicated timeline for B.Tech in CSE with Data Science (2024–2028).
+   - Dedicated timeline for B.Tech in CSE with Data Science (2026–2030, Register No: `26BDS0307`).
    - Core courses highlighted: Problem Solving & Algorithms in Python, Calculus & Linear Algebra, Discrete Math, and Data Analysis.
 
 7. **Direct Mail Redirection**:
-   - Form directly launches the user's default email client (Apple Mail, Outlook, Windows Mail) or Gmail Web composer pre-filled with their name, inquiry subject, and message addressed to `imthiyazcps@gmail.com`.
+   - Form directly launches the user's default email client or Gmail Web composer pre-filled with their inquiry addressed to primary college email `imthiyazahmed.m2026@vitstudent.ac.in` (cc: `imthiyazcps@gmail.com`).
    - Zero intermediate servers or deliverability risks — 100% direct communication to your inbox.
 
 6. **Interactive Background & Micro-Interactions**:
