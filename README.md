@@ -48,7 +48,7 @@ Featuring a sleek dark/light aesthetic, glassmorphic UI, ambient canvas particle
    - Core courses highlighted: Problem Solving & Algorithms in Python, Calculus & Linear Algebra, Discrete Math, and Data Analysis.
 
 7. **Direct Mail Redirection**:
-   - Form directly launches the user's default email client or Gmail Web composer pre-filled with their inquiry addressed to primary college email `imthiyazahmed.m2026@vitstudent.ac.in` (cc: `imthiyazcps@gmail.com`).
+   - Form directly launches the user's default email client or Gmail Web composer pre-filled with their inquiry addressed to student college email `imthiyazahmed.m2026@vitstudent.ac.in`.
    - Zero intermediate servers or deliverability risks — 100% direct communication to your inbox.
 
 6. **Interactive Background & Micro-Interactions**:
@@ -120,7 +120,7 @@ npx serve . -l 3000
 
 - **GitHub**: [https://github.com/ImthiyazAhmed07](https://github.com/ImthiyazAhmed07)
 - **LinkedIn**: [https://www.linkedin.com/in/imthiyaz-ahmed-bb4807394](https://www.linkedin.com/in/imthiyaz-ahmed-bb4807394)
-- **Email**: [imthiyazcps@gmail.com](mailto:imthiyazcps@gmail.com)
+- **Email**: [imthiyazahmed.m2026@vitstudent.ac.in](mailto:imthiyazahmed.m2026@vitstudent.ac.in)
 - **Resume Link**: Place your PDF resume in this folder (e.g., `resume.pdf`) and link it in the header or hero button.
 
 ---

@@ -458,8 +458,7 @@ function initDevTerminal() {
     dob: () => `Date of Birth: 20 March 2007 (Age: 19 years old)`,
 
     contact: () => `Let's connect:
-  • College Email: imthiyazahmed.m2026@vitstudent.ac.in
-  • Personal Email: imthiyazcps@gmail.com
+  • Email: imthiyazahmed.m2026@vitstudent.ac.in
   • GitHub: https://github.com/ImthiyazAhmed07
   • LinkedIn: https://www.linkedin.com/in/imthiyaz-ahmed-bb4807394?utm_source=share_via&utm_content=profile&utm_medium=member_android
   • Location: VIT Vellore, Tamil Nadu, India`,
@@ -541,7 +540,7 @@ function initContactForm() {
       return;
     }
 
-    const mailtoUrl = `mailto:imthiyazahmed.m2026@vitstudent.ac.in?cc=imthiyazcps@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:imthiyazahmed.m2026@vitstudent.ac.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     showToast('Redirecting to your mail client...', 'success');
 
@@ -556,7 +555,7 @@ function initContactForm() {
       const { subject, rawMessage, body } = buildEmailPayload();
 
       const finalBody = rawMessage ? body : 'Hi Imthiyaz,\n\nI came across your portfolio and wanted to connect.\n\n---\nSent via Portfolio Website';
-      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=imthiyazahmed.m2026@vitstudent.ac.in&cc=imthiyazcps@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(finalBody)}`;
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=imthiyazahmed.m2026@vitstudent.ac.in&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(finalBody)}`;
 
       showToast('Opening Gmail composer in a new tab...', 'success');
       window.open(gmailUrl, '_blank');

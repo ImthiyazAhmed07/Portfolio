@@ -9,7 +9,7 @@
 
     @page {
       size: A4 portrait;
-      margin: 14mm 18mm 14mm 18mm;
+      margin: 12mm 16mm 12mm 16mm;
     }
 
     * {
@@ -27,11 +27,13 @@
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
       height: 100%;
+      overflow: hidden;
     }
 
     .page-wrapper {
       width: 100%;
-      height: 265mm;
+      height: 100%;
+      max-height: 270mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -41,7 +43,7 @@
     /* Top Institutional Header */
     .uni-header {
       border-bottom: 3px solid #0284c7;
-      padding-bottom: 14px;
+      padding-bottom: 12px;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -92,7 +94,7 @@
       border: 1.5px solid #e2e8f0;
       border-left: 6px solid #0284c7;
       border-radius: 10px;
-      padding: 16px 22px;
+      padding: 16px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -114,9 +116,10 @@
     .reg-tag {
       background: #0284c7;
       color: #ffffff;
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: 8px;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.22);
     }
 
     .reg-tag .tag-sub {
@@ -124,12 +127,12 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
       opacity: 0.9;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .reg-tag .tag-val {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 800;
       letter-spacing: 0.5px;
     }
@@ -139,11 +142,11 @@
       background: #ffffff;
       border: 1.5px solid #e2e8f0;
       border-radius: 10px;
-      padding: 20px 24px;
+      padding: 18px 22px;
     }
 
     .section-heading {
-      font-size: 12px;
+      font-size: 12.5px;
       font-weight: 800;
       color: #0369a1;
       text-transform: uppercase;
@@ -164,7 +167,7 @@
     .info-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px 28px;
+      gap: 14px 26px;
     }
 
     .info-cell {
@@ -172,17 +175,21 @@
       padding-bottom: 8px;
     }
 
+    .info-cell.full-width {
+      grid-column: 1 / -1;
+    }
+
     .info-cell .label {
       font-size: 10px;
       text-transform: uppercase;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.5px;
       color: #64748b;
       font-weight: 700;
       margin-bottom: 3px;
     }
 
     .info-cell .value {
-      font-size: 13.5px;
+      font-size: 14px;
       font-weight: 700;
       color: #0f172a;
     }
@@ -232,20 +239,20 @@
     }
 
     .link-callout-desc {
-      font-size: 12px;
+      font-size: 12.5px;
       color: #bae6fd;
       margin-bottom: 14px;
     }
 
     .link-box {
-      background: rgba(255, 255, 255, 0.15);
-      border: 2px solid rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.16);
+      border: 2px solid rgba(255, 255, 255, 0.45);
       border-radius: 10px;
-      padding: 14px 20px;
+      padding: 14px 22px;
       text-decoration: none;
       display: inline-block;
       width: 100%;
-      max-width: 620px;
+      max-width: 580px;
       transition: background 0.2s;
     }
 
@@ -262,12 +269,12 @@
     .link-box .click-hint {
       font-size: 11px;
       color: #e0f2fe;
-      margin-top: 4px;
+      margin-top: 5px;
       font-weight: 600;
       letter-spacing: 0.3px;
     }
 
-    /* Submission Note to Faculty */
+    /* Submission Declaration to Faculty */
     .memo-box {
       background: #f8fafc;
       border: 1.5px solid #e2e8f0;
@@ -276,51 +283,18 @@
     }
 
     .memo-box h4 {
-      font-size: 12.5px;
+      font-size: 13px;
       font-weight: 800;
       color: #0f172a;
       text-transform: uppercase;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.5px;
       margin-bottom: 6px;
     }
 
     .memo-box p {
-      font-size: 12px;
+      font-size: 12.5px;
       color: #475569;
       line-height: 1.55;
-    }
-
-    /* Evaluator Sign-off & Assessment Block */
-    .evaluator-card {
-      background: #ffffff;
-      border: 1.5px solid #cbd5e1;
-      border-radius: 10px;
-      padding: 16px 22px;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr 1fr;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .eval-col .label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: #64748b;
-      font-weight: 700;
-      margin-bottom: 5px;
-    }
-
-    .eval-col .val-line {
-      font-size: 12px;
-      color: #0f172a;
-      font-weight: 600;
-    }
-
-    .eval-col .sig-space {
-      margin-top: 18px;
-      border-bottom: 1.5px solid #0f172a;
-      width: 90%;
     }
 
     /* Footer */
@@ -367,7 +341,7 @@
       </div>
     </div>
 
-    <!-- Student Information Block -->
+    <!-- Student Academic Profile Block -->
     <div class="details-section">
       <div class="section-heading">Student Academic Profile</div>
       <div class="info-grid">
@@ -395,16 +369,10 @@
           <div class="label">Institution</div>
           <div class="value">Vellore Institute of Technology (VIT), Vellore</div>
         </div>
-        <div class="info-cell">
+        <div class="info-cell full-width">
           <div class="label">Primary Student College Email</div>
-          <div class="value mono-value" style="font-size: 12px;">
+          <div class="value mono-value" style="font-size: 13px;">
             <a href="mailto:imthiyazahmed.m2026@vitstudent.ac.in" style="color: #0369a1; text-decoration: none;">imthiyazahmed.m2026@vitstudent.ac.in</a>
-          </div>
-        </div>
-        <div class="info-cell">
-          <div class="label">Personal Email</div>
-          <div class="value mono-value" style="font-size: 12px;">
-            <a href="mailto:imthiyazcps@gmail.com" style="color: #0369a1; text-decoration: none;">imthiyazcps@gmail.com</a>
           </div>
         </div>
       </div>
@@ -417,7 +385,7 @@
         <span class="link-callout-title">Interactive Student Portfolio Website</span>
       </div>
       <p class="link-callout-desc">
-        Click the link below to access and evaluate the full student portfolio website directly in your browser:
+        Click the link below to open and evaluate the student portfolio website directly in your browser:
       </p>
       <a href="https://imthiyazahmed07.github.io/Portfolio/" target="_blank" class="link-box" title="Click to open student portfolio website">
         <div class="url-text">https://imthiyazahmed07.github.io/Portfolio/</div>
@@ -425,7 +393,7 @@
       </a>
     </div>
 
-    <!-- Submission Statement to Faculty -->
+    <!-- Submission Declaration to Faculty -->
     <div class="memo-box">
       <h4>Submission Declaration</h4>
       <p>
@@ -434,32 +402,13 @@
       </p>
     </div>
 
-    <!-- Evaluator & Sign-off Block -->
-    <div class="evaluator-card">
-      <div class="eval-col">
-        <div class="label">Submission Verified By Student</div>
-        <div class="val-line">Imthiyaz Ahmed</div>
-        <div class="val-line" style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #64748b; margin-top: 2px;">Reg. No: 26BDS0307</div>
-      </div>
-      <div class="eval-col">
-        <div class="label">Date of Submission</div>
-        <div class="val-line">Academic Term 2026</div>
-        <div class="val-line" style="color: #64748b; font-size: 11px; margin-top: 2px;">VIT Vellore Campus</div>
-      </div>
-      <div class="eval-col">
-        <div class="label">Faculty / Evaluator Signature</div>
-        <div class="sig-space"></div>
-        <div style="font-size: 10px; color: #64748b; margin-top: 4px; font-family: 'JetBrains Mono', monospace;">Signature &amp; Date</div>
-      </div>
-    </div>
-
     <!-- Document Footer -->
     <div class="doc-footer">
       <div>
-        Student: <strong>Imthiyaz Ahmed</strong> | Reg: <strong>26BDS0307</strong>
+        Student: <strong>Imthiyaz Ahmed</strong> | Reg. No: <strong>26BDS0307</strong>
       </div>
       <div>
-        Primary College Email: <strong>imthiyazahmed.m2026@vitstudent.ac.in</strong>
+        College Email: <strong>imthiyazahmed.m2026@vitstudent.ac.in</strong>
       </div>
     </div>
 
