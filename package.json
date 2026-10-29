@@ -1,0 +1,20 @@
+{
+  "name": "imthiyaz-ahmed-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio of Imthiyaz Ahmed - First Year B.Tech CSE (Data Science) @ VIT Vellore",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "imthiyaz-ahmed",
+    "vit-vellore",
+    "data-science",
+    "pageora",
+    "developer"
+  ],
+  "author": "Imthiyaz Ahmed",
+  "license": "MIT"
+}
